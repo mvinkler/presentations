@@ -1,0 +1,18 @@
+apiVersion: sources.knative.dev/v1beta1
+kind: KafkaSource
+metadata:
+  name: my-kafka-source
+  namespace: knative-eventing-demo
+spec:
+  consumerGroup: kafka-kn-source-demo
+  bootstrapServers:
+   - my-cluster-kafka-bootstrap.kafka:9092
+  topics:
+   - my-kafka-topic
+  sink:
+    ref:
+      apiVersion: messaging.knative.dev/v1
+      kind: Channel
+      name: my-kafka-channel
+      namespace: knative-eventing-demo
+
