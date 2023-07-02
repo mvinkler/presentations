@@ -15,7 +15,7 @@ See [Abstract.md](Abstract.md)
 
 ### Tutorials
 
-- Knative Tutorial - Introduction to Knative: bit.ly/knative-tutorial
+- Knative Tutorial - Introduction to Knative: [bit.ly/knative-tutorial](https://bit.ly/knative-tutorial)
 
 - developers.redhat.com - Serverless Tutorial: https://developers.redhat.com/coderland/serverless
 
