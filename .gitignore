@@ -1,0 +1,8 @@
+# IntelliJ
+.idea
+*.ipr
+*.iml
+*.iws
+
+# Temp stuff
+.tmp
