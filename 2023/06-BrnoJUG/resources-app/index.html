@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>quarkus-rest-api - 1.0.0-SNAPSHOT</title>
+        <style>
+            img {
+              width: 100%;
+            }
+            body {
+                margin: 0;
+                font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+            }
+            code {
+                font-family: "Courier New", monospace;
+                color: #e83e8c;
+                word-break: break-word;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                margin-bottom: 0.5rem;
+                font-weight: 400;
+                line-height: 1.5;
+            }
+            h1 { font-size: 2.25rem; }
+            h2 { font-size: 1.6rem }
+            h3 { font-size: 1.5rem }
+            h4 { font-size: 1.4rem }
+            h5 { font-size: 1.25rem }
+            h6 { font-size: 1rem }
+            p {
+                padding: .15rem 0;
+                margin: 0;
+                line-height: 1.3rem;
+            }
+            a {
+                text-decoration: underline;
+                color: #1259A5;
+            }
+            a:hover, a:active { color: #c00; }
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                clear: both;
+            }
+            .header-wrapper {
+                padding: 0 13rem;
+                background: black;
+            }
+            .banner-wrapper {
+                padding: 0 13rem;
+                background: url("lenovo.jpg")
+            }
+            .content-wrapper {
+                padding: 0 6rem;
+                background: white;
+            }
+            .header {
+                background-position: 0 1rem;
+                min-height: 60px;
+                grid-column: span 12;
+            }
+            #quarkus-logo-svg {
+                width: 200px;
+                height: 30px;
+                padding-top: 1rem;
+            }
+            .banner {
+                grid-column: span 12;
+                padding: 2rem 0;
+            }
+            .callout {
+                color: white;
+                font-size: 3.5rem;
+                margin: 0;
+                padding-top: 5rem;
+                grid-column: span 8;
+            }
+            .app-details {
+                margin: 1rem 0;
+                border: 1px solid lightgrey;
+                padding: 1rem;
+                background: white;
+                font-size: .75rem;
+                font-weight: 300;
+                grid-column: span 4;
+            }
+            .app-details code { font-size: 87.5%; }
+            .app-details ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+            .app-details ul li { margin-bottom: 0.2rem; }
+            .app-details h5 {
+                margin: 0;
+                padding: 0;
+            }
+            .left-column {
+                grid-column: span 8;
+                padding-right: 3rem;
+            }
+            .left-column p {
+                padding: .15rem 0;
+                margin: 0;
+                font-weight: 300;
+            }
+            .left-column ul {
+                margin: 0;
+                padding: 10px 0 0 25px;
+                list-style-type: "\1F680";
+                font-weight: 300;
+            }
+            .left-column li { padding-left: 10px; }
+            .left-column .cta-button {
+                margin: 20px 0;
+                display: inline-block;
+                padding: 1rem 2rem;
+                background-color: #4695EB;
+                font-weight: 600;
+                color: white;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+            .right-column {
+                grid-column: span 4;
+                margin-top: 1rem;
+                font-weight: 200;
+            }
+            .right-column h5 {
+                padding: 1rem 0 .25rem 0;
+                margin: 0;
+                font-weight: 300;
+            }
+            .right-column h3 { font-weight: 400;}
+            .right-column ul {
+                margin: 0;
+                list-style-type: circle;
+            }
+            .right-column li {
+                padding: .5rem 0 0 0;
+            }
+            .provided-code {
+                line-height: 20px;
+            }
+            .provided-code b {
+                font-weight: 400;
+                margin-bottom: 15px;
+            }
+            @media screen and (max-width: 1023px) {
+                .header-wrapper {
+                    padding: 0 1rem;
+                    background: black;
+                }
+                .banner-wrapper { padding: 0 1rem; }
+                .content-wrapper {
+                    padding: 0 1rem;
+                    background: white;
+                }
+                .left-column {
+                    grid-column: span 12;
+                }
+                .right-column {
+                    grid-column: span 12;
+                    margin: 3rem 0;
+                }
+                .callout {
+                    color: white;
+                    font-size: 3.5rem;
+                    margin: 0;
+                    padding: 1rem 0;
+                    grid-column: span 12;
+                }
+                .app-details {
+                    margin: 1rem 0;
+                    border: 1px solid lightgrey;
+                    padding: 1rem;
+                    background: white;
+                    font-size: 1rem;
+                    font-weight: 300;
+                    grid-column: span 12;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="content-wrapper">
+<!--             <img src="quarkus.jpg" alt="YOU HAVE BEEN SERVED a Quarkus native compiled app using Openshift Serverless"> -->
+            <h1>Brno JUG Serverless talk Resources</h1>
+            <h3>Try Serverless yourself</h3>
+            <ul class="provided-code">
+                <li class="provided-code"><p>Openshift Developer Sandbox: <a href="https://developers.redhat.com">https://developers.redhat.com</a></p></li>
+                <li class="provided-code"><p>minikube on your local machine: <a href="https://github.com/knative-sandbox/kn-plugin-quickstart">https://github.com/knative-sandbox/kn-plugin-quickstart</a></p></li>
+            </ul>
+            <h3>Tutorials</h3>
+            <ul class="provided-code">
+                <li class="provided-code"><p>Knative Tutorial - Introduction to Knative: <a href="bit.ly/knative-tutorial">bit.ly/knative-tutorial</a></p></li>
+                <li class="provided-code"><p>developers.redhat.com - Serverless Tutorial: <a href="https://developers.redhat.com/coderland/serverless">https://developers.redhat.com/coderland/serverless</a></p></li>
+            </ul>
+
+            <h3>Demo apps</h3>
+            <ul class="provided-code">
+                <li class="provided-code"><p><a href="https://github.com/mvinkler/quarkus-rest-api">https://github.com/mvinkler/quarkus-rest-api</a> (Serving demo)</p></li>
+                <li class="provided-code"><p><a href="https://github.com/mvinkler/quarkus-rest-api-funqy">https://github.com/mvinkler/quarkus-rest-api-funqy</a> (Serving demo)</p></li>
+                <li class="provided-code"><p><a href="https://github.com/n3wscott/sockeye">https://github.com/n3wscott/sockeye</a> (Eventing demo)</p></li>
+                <li class="provided-code"><p><a href="https://github.com/openshift-knative/showcase">https://github.com/openshift-knative/showcase</a></p></li>
+                <li class="provided-code"><p><a href="https://knative.dev/docs/serving/autoscaling/autoscale-go/">https://knative.dev/docs/serving/autoscaling/autoscale-go/</a></p></li>
+            </ul>
+
+            <h3>Documentation</h3>
+            <ul class="provided-code">
+                <li class="provided-code"><p>Knative: <a href="https://knative.dev/docs/">https://knative.dev/docs/</a></p></li>
+                <li class="provided-code"><p>Openshift Serverless: <a href="https://docs.openshift.com/serverless/">https://docs.openshift.com/serverless</a></p></li>
+            </ul>
+        </div>
+    </body>
+</html>
